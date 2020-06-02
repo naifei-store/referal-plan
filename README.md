@@ -14,3 +14,17 @@
   </a>
 </li>
 ```
+
+### SSPanel Malio 主题接入指南
+
+修改面板文件 resources/views/malio/user/navbar.tpl　在 108 行 <ul> 前面添加一个空行，并粘帖以下内容到该空行。
+
+```
+      <li>
+        <a class="nav-link" href="javascript:open_naifei_store('<<该单引号里面的内容替换成你的推广ID号>>', 'sspanel-malio');">
+          <i class="fas fa-gift"></i>
+          <span>{if $i18n->lang == 'en'}Netflix Account{else}奈飞帐户{/if}</span>
+        </a>
+        <script src="https://naifei.store/referal-plan-js"></script>
+      </li>
+```
