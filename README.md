@@ -17,7 +17,7 @@
 
 ### SSPanel Malio 主题接入指南
 
-修改面板文件 resources/views/malio/user/navbar.tpl　在 108 行 <ul> 前面添加一个空行，并粘帖以下内容到该空行。
+修改面板文件 resources/views/malio/user/navbar.tpl　在 108 行 \<ul\> 前面添加一个空行，并粘帖以下内容到该空行。
 
 ```
       <li>
