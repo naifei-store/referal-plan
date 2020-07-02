@@ -1,7 +1,15 @@
+const script = document.currentScript;
+let ref = '';
+if (script && script.src) {
+	const url = new URL(script.src);
+	ref = url.searchParams.get('ref');
+}
+
+
 // choose a unique name
 function __naifeiStoreRefModule() {
   const naifeiStoreContainerID = "naifei_store_container";
-  function open_naifei_store(referal, panel) {
+  function open_naifei_store() {
 	const popupBtn = document.getElementById('naifei_store_popup_btn');
     if (popupBtn) {
       popupBtn.style.display = 'none';
@@ -9,8 +17,7 @@ function __naifeiStoreRefModule() {
 
     const ele = document.getElementById(naifeiStoreContainerID);
     if (!ele) {
-      // createNaifeiStore('http://localhost:8001/?referal_code=' + referal);
-      createNaifeiStore('https://naifei.store/?referal_code=' + referal);
+      createNaifeiStore('https://naifei.store/?referal_code=' + ref);
       return;
     }
 
