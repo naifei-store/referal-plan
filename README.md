@@ -55,10 +55,10 @@
 
 ![](./v2board-naifei-store-2.jpg)
 
-修改面板文件 resources/views/app.blade.php 在 30 行 \<script\> 前面添加一个空行，并粘帖以下内容到该空行。
+修改面板文件 `resources/views/app.blade.php` 在 30 行 \<script\> 前面添加一个空行，并粘帖以下内容到该空行，将等号后面替换成你自己的推广ID号。
 
 ```
-<script src="https://naifei.store/referal-plan-js-v2"></script>
+<script src="https://naifei.store/referal-plan-js-v2?ref=你的推广ID号"></script>
 ```
 
 ![](./v2board-naifei-store-3.jpg)
