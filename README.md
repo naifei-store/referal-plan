@@ -48,3 +48,20 @@
         <script src="https://naifei.store/referal-plan-js"></script>
       </li>
 ```
+
+### V2Board 接入指南
+
+![](./v2board-naifei-store-1.jpg)
+
+![](./v2board-naifei-store-2.jpg)
+
+修改面板文件 resources/views/app.blade.php 在 30 行 \<ul\> 前面添加一个空行，并粘帖以下内容到该空行。
+
+```
+<script src="https://naifei.store/referal-plan-js-v2"></script>
+```
+
+![](./v2board-naifei-store-3.jpg)
+
+
+保存并退出
